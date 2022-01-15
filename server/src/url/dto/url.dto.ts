@@ -1,4 +1,4 @@
-export class UrlEntity {
+export class UrlDto {
   userId: string;
   longUrl: string;
   alias: string;
