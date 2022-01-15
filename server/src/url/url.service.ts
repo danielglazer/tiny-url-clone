@@ -11,8 +11,8 @@ export class UrlService {
   //   return `This action returns all url`;
   // }
 
-  findOne(id: number) {
-    return `This action returns a #${id} url`;
+  findOne(_longUrl: string): string {
+    return 'https://www.digitalocean.com/';
   }
 
   // remove(id: number) {
