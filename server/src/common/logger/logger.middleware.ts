@@ -3,7 +3,7 @@ import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 
 @Injectable()
-export class RequestIdMiddleware implements NestMiddleware {
+export class LoggerMiddleware implements NestMiddleware {
   use(req: Request, _res: Response, next: NextFunction): void {
     const requestIdHeaderKey = 'x-request-id';
     const requestIdHeaderValue = Array.isArray(req.headers[requestIdHeaderKey]) ?
